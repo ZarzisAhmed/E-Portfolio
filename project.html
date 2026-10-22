@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details | Khondokar Zarzis Ahmed</title>
+    <meta
+      name="description"
+      content="Project details: tech stack, description, live link, GitHub repository, challenges and future plans."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="project">
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <nav>
+      <a href="index.html#hero" class="logo">Zarzis Ahmed</a>
+      <ul id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects" class="active">Projects</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#video">Video</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main id="projectRoot"></main>
+
+    <footer class="reveal">
+      <div class="footer-social">
+        <a
+          href="https://github.com/ZarzisAhmed"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/khondokar-zarzis-ahmed-66b2b4412/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="mailto:khzarzisahmed15@gmail.com" aria-label="Email"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+      <p>© 2026 Khondokar Zarzis Ahmed | ePortfolio</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Order matters: render the page first, then index.js adds the shared behaviour -->
+    <script src="./projects.js"></script>
+    <script src="./project.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
